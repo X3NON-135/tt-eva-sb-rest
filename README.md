@@ -1,1 +1,1 @@
-"# REST application build with SpringBoot" 
+# REST application build with SpringBoot
