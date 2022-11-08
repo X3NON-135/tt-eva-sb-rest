@@ -29,8 +29,7 @@ public class ProductServiceImplTest {
 
     @BeforeAll
     public void setUp() {
-        DtoResponseMapper<ProductResponseDto, Product> mapper = Mockito.mock(DtoResponseMapper.class);
-        productService = new ProductServiceImpl(productRepository, mapper);
+        productService = new ProductServiceImpl(productRepository);
     }
 
     @Test
@@ -45,7 +44,7 @@ public class ProductServiceImplTest {
         product2.setDescription(DESCRIPTION);
         List<Product> products = List.of(product1, product2);
         Mockito.when(productRepository.findAll()).thenReturn(products);
-        List<ProductResponseDto> actual = productService.getProductsByRegex(REGEX);
+        List<Product> actual = productService.getProductsByRegex(REGEX);
         Assertions.assertNotNull(actual);
         Assertions.assertEquals(1, actual.size());
         Assertions.assertFalse(actual.isEmpty());

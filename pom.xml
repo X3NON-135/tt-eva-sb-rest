@@ -8,7 +8,7 @@
         <version>2.7.5</version>
         <relativePath/>
     </parent>
-    <groupId>mate.academy.springboot</groupId>
+    <groupId>spring.boot.rest</groupId>
     <artifactId>intro</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>intro</name>
