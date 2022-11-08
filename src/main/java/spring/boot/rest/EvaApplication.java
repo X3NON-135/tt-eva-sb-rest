@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TtEvaApplication {
+public class EvaApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(TtEvaApplication.class, args);
+        SpringApplication.run(EvaApplication.class, args);
     }
 
 }

@@ -15,14 +15,4 @@ public class ProductResponseMapper implements DtoResponseMapper<ProductResponseD
         productResponseDto.setDescription(product.getDescription());
         return productResponseDto;
     }
-
-    @Override
-    public Product toModel(ProductResponseDto dto) {
-        Product product = new Product();
-        product.setId(dto.getId());
-        product.setName(dto.getName());
-        product.setDescription(dto.getDescription());
-        return product;
-    }
-
 }

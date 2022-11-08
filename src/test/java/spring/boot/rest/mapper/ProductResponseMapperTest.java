@@ -31,17 +31,4 @@ public class ProductResponseMapperTest {
         Assertions.assertEquals(NAME, actual.getName());
         Assertions.assertEquals(DESCRIPTION, actual.getDescription());
     }
-
-    @Test
-    public void dtoToModel() {
-        ProductResponseDto dto = new ProductResponseDto();
-        dto.setId(ID);
-        dto.setName(NAME);
-        dto.setDescription(DESCRIPTION);
-        Product actual = mapper.toModel(dto);
-        Assertions.assertNotNull(actual);
-        Assertions.assertEquals(ID, actual.getId());
-        Assertions.assertEquals(NAME, actual.getName());
-        Assertions.assertEquals(DESCRIPTION, actual.getDescription());
-    }
 }
